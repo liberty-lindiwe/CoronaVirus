@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/food.css">
+    <title>Search-Form</title>
+
+     <!-- Font Awesome Icons -->
+    
+     <link rel="stylesheet" href="./css/all.css">
+
+</head>
+<body>
+    <div class="imagebg fullscreen-video-wrap">
+
+       <nav>
+         <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+         </div>
+         <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./index.html?pagename=index.html#health">Health</a></li>
+          <li><a href="./index.html?pagename=index.html#whatyouneedtoknow">Must Know</a></li>                  
+          <li><a href="./Mental.html">Mental Health</a></li>   
+          <li><a href="./food.html">SearchRecipes</a></li>   
+          <li><a href="./loginRegister.html">Login/Register</a></li>   
+          <li><a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">CoronaVirus Origin</a></li>                
+          <li><a href="https://economictimes.indiatimes.com/magazines/panache/is-covid-19-a-bioweapon-five-conspiracy-theories-around-coronavirus-that-will-shock-you/the-5g-connection/slideshow/74870613.cms">Conspiracy Theories</a></li>                  
+         </ul>
+       </nav>
+
+       <div class="landing">                     
+        <video src="./Media/Videos/food_Slomo.mp4" autoplay="true" loop="true" muted></video>
+        
+        <div class="form-box">
+          <div class="search-container">
+            <input class="searchRecipes" type="search" id="searchTerm" placeholder="Search For Food Recipes" aria-label="Search">
+            <button  type="submit" class="searchButton" id="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+  
+          <ul id="foodResults" class="items">
+                  
+          </ul>
+
+          <div id="Text">
+
+          </div>
+  
+        </div>  
+       </div>
+
+        
+      </div>
+    
+       <script src="../js/app.js"></script>
+
+   <script src="../js/food.js"></script> 
+</body>
+</html>

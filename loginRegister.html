@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>LoginOrRegister-Form</title>
+
+     <!-- Font Awesome Icons -->
+    
+     <link rel="stylesheet" href="./css/all.css">
+
+</head>
+<body>
+    <div class="hero">
+
+        <nav>
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class = "nav-links">
+              <li><a href="./index.html?pagename=index.html#home" class="listcontent">Home</a></li>
+              <li><a href="./index.html?pagename=index.html#health" class="listcontent">Health</a></li>
+              <li><a href="./index.html?pagename=index.html#whatyouneedtoknow" class="listcontent">Must Know</a></li>                  
+              <li><a href="./Mental.html" class="listcontent">Mental Health</a></li>   
+              <li><a href="./loginRegister.html">Login/Register</a></li>  
+              <li><a href="./food.html">SearchRecipes</a></li>               
+              <li><a href="https://en.wikipedia.org/wiki/COVID-19_pandemic" class="listcontent">CoronaVirus Origin</a></li>                
+              <li><a href="https://economictimes.indiatimes.com/magazines/panache/is-covid-19-a-bioweapon-five-conspiracy-theories-around-coronavirus-that-will-shock-you/the-5g-connection/slideshow/74870613.cms" class="listcontent">Conspiracy Theories</a></li>                  
+             </ul>
+          </nav>
+
+        <div class="form-box">
+
+          <div class="button-box">
+             <div id="btn"></div>
+             <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+             <button type="button" class="toggle-btn" onclick="Register()">Register</button>                           
+          </div>
+          
+          <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        
+          <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="Username" required>
+            <input type="email" class="input-field" placeholder="Email Address" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms and Conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+        </div>
+        <div class="social-icons">
+             <a href="https://www.facebook.com/PresidencyZA/videos/covid19-coronavirussa/288881108762884/"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://www.instagram.com/sacoronavirus.co.za/"><i class="fab fa-instagram"></i></a>
+             <a href="https://twitter.com/COVID_19_ZA"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.youtube.com/channel/UCpeDy9GXZSJLTDlSz17UYGw"><i class="fab fa-youtube"></i></a>
+        </div>
+       
+    </div>
+    
+    <script src="js/login.js"></script>    
+    <script src="js/app.js"></script>    
+       
+  
+</body>
+</html>
