@@ -1,0 +1,261 @@
+@import url('../css/fonts.css');
+
+:root{
+   
+  /* Theme font-family  */
+  --Abel:'Abel',cursive;
+  --Anton:'Anton',cursive;
+  --Josefin:'Josefin',cursive;
+  --Lexend:'Lexend',cursive;
+  --Livvic:'Livvic',cursive;
+
+  /* colors */
+  --bluish:#4169E1;
+  --redish:red;
+  --pure:white;
+}
+
+/* Global settings */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+/* Styling the nav */
+.nav-links li{
+    opacity:0;
+}
+
+.hamburger{
+  position: absolute;
+  cursor: pointer;
+  right:0;
+  top:30%;
+  transform: translate(-5%,-30%);
+  z-index:4;
+}
+
+nav{
+  height:10vh;    
+  position:relative
+}
+
+.line{
+   width:30px;
+   height:3px;
+   background:white;
+   margin:5px;
+}
+
+.nav-links{
+  position:fixed;
+    display: flex;
+    background :var(--bluish);  
+    height:100%;
+    width:100%;
+    align-items: center; 
+    margin-left:auto;
+    flex-direction: column;  
+    justify-content: space-around;
+    z-index:2;
+    list-style: none;
+    clip-path: circle(9px at 90% -10%);
+    -webkit-clip-path: circle(9px at 90% -10%);
+    transition: all 1s ease-out;       
+  
+}
+
+.nav-links.open{
+  clip-path: circle(1300px at 90% -10%);
+  -webkit-clip-path:circle(1300px at 90% -10%);
+  
+
+}
+
+.nav-links li a {
+  color:white;
+  text-decoration: none;
+  font-size:25px;
+  font-family: var(--Abel);
+
+}
+
+
+
+.nav-links li:nth-child(1){      /*Getting the list contents*/
+  transition:all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2){
+  transition:all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3){
+  transition:all 0.5s ease 0.6s;
+}
+.nav-links li:nth-child(4){
+  transition:all 0.5s ease 0.8s;
+}
+.nav-links li:nth-child(5){
+  transition:all 0.5s ease 1.2s;
+}
+.nav-links li:nth-child(6){
+  transition:all 0.5s ease 1.4s;
+}
+.nav-links li:nth-child(7){
+  transition:all 0.5s ease 1.6s;
+}
+.nav-links li:nth-child(8){
+  transition:all 0.5s ease 1.8s;
+}
+
+li.fade{
+    opacity:1;
+}
+  
+  .imageblock {
+    /* The image used */
+    background-image: url("../Media/Images/pics/background.JPG");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    position: relative;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 48%;
+    width: 100%;
+    text-align: center;    
+}
+
+.caption span.border {  
+    color: #fff;
+    padding: 18px;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-family:var(--Josefin);
+}
+ 
+.top-center{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+.top-center-child
+{
+  position: absolute;
+  top: 39%;  
+  left: 50%;
+  transform: translate(-50%, -39%);
+  color:  black;
+  width: 100%;
+  font-family: var(--Abel);
+  padding: 0 18px;
+  background-color: rgba(255,165,0,0.6);
+  height: 180px;
+}
+
+.bottom-center-child{
+  position: absolute;
+  top: 80%; 
+  left: 0%;
+  color: black;
+
+  width:100%;
+  font-family: var(--Abel);
+
+  padding: 0 18px;
+  background-color: rgba(255,165,0,0.6);;
+  height: 180px;
+}
+
+.top-left-child{
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  color:  black;
+  width:30.3%;
+  font-family: var(--Abel);
+  padding: 0 15px;
+  background-color: rgba(255,165,0,0.6);;
+  height: 190px;
+}
+
+.top-right-child{
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  color:  black;
+  width:30.3%;
+  padding: 0 18px;
+  background-color: rgba(255,165,0,0.6);;
+  height: 180px;
+  font-family: var(--Abel);
+
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 60px;
+}
+
+.bottom-center{
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+ 
+}
+
+
+.accordion{ 
+  background-color: #eee;
+  width: 10.3%;
+  padding: 10px;
+  background-color: darkslategrey;
+  color:var(--pure);
+  font-size: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  outline: none;
+  
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(255,165,0,0.6);
+  color: #ccc;
+  box-shadow: 5px 10px black;
+  
+}
+.panel {
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

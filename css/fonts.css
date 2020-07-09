@@ -1,0 +1,24 @@
+@font-face{ /* specifies a custom font with which to display text */
+    font-family: Abel;
+    src:url('../fonts/Abel/Abel-Regular.ttf');
+}
+
+@font-face{ /* specifies a custom font with which to display text */
+    font-family: Anton;
+    src:url('../fonts/Anton/Anton-Regular.ttf');
+}
+
+@font-face{ /* specifies a custom font with which to display text */
+    font-family: Josefin;
+    src:url('../fonts/Josefin_Sans/JosefinSans-Regular.ttf');
+}
+
+@font-face{ /* specifies a custom font with which to display text */
+    font-family: Lexend;
+    src:url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+
+@font-face{ /* specifies a custom font with which to display text */
+    font-family: Livvic   ;
+    src:url('../fonts/Livvic/Livvic-Regular.ttf');
+}

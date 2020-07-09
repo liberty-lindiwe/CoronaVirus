@@ -1,0 +1,263 @@
+@import url('../css/fonts.css');  /* Add the font file not to my html but the css file */
+
+/* In a case where you will be using a value numerous times, rather make it a variable */
+
+/* The :root selector matches the document's root element */
+:root{
+   
+   /* Theme font-family  */
+   --Abel:'Abel',cursive;
+   --Anton:'Anton',cursive;
+   --Josefin:'Josefin',cursive;
+   --Lexend:'Lexend',cursive;
+   --Livvic:'Livvic',cursive;
+
+   /* Colours */
+   --bluish:#4169E1;
+   --redish:red;
+   --pure:white;
+}
+/* --------------Global Classes ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   
+}
+
+body,html{
+    height:100%;
+    overflow:hidden;              /*No scroll bars*/
+
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Styling the navigation  */
+
+nav{
+    height:10vh;
+    position: relative; 
+}
+
+.nav-links{
+    position:fixed;
+    display: flex;
+    background :var(--bluish);  
+    height:100%;
+    width:100%;
+    align-items: center; 
+    margin-left:auto;
+    flex-direction: column;  
+    justify-content: space-around;
+    z-index:2;
+    list-style: none;
+    clip-path: circle(9px at 90% -10%);
+    -webkit-clip-path: circle(9px at 90% -10%);
+    transition: all 1s ease-out;                      
+}
+
+.nav-links.open{                                     
+    clip-path: circle(1300px at 90% -10%);
+    -webkit-clip-path: circle(1300px at 90% -10%);
+}
+
+
+.nav-links li a{
+    color:var(--pure);
+    text-decoration: none;
+    font-size:25px;
+    font-family: var(--Abel);
+}
+
+.line{
+    width:30px;
+    height:3px;
+    background-color: var(--pure) ;
+    margin:5px;
+
+}
+
+.hamburger{                  
+    position:absolute;
+    cursor: pointer; 
+    right:5%;
+    top:50%;
+    transform:translate(-5%,-50%);
+    z-index: 3;
+}
+
+.nav-links li{ 
+    opacity:0;
+}
+
+
+.nav-links li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+
+}
+.nav-links li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+}
+.nav-links li:nth-child(4){
+    transition: all 0.5s ease 0.8s;
+}
+.nav-links li:nth-child(5){
+    transition: all 0.5s ease 1.2s;
+}
+.nav-links li:nth-child(6){
+    transition: all 0.5s ease 1.4s;
+}
+.nav-links li:nth-child(7){
+    transition: all 0.5s ease 1.6s;
+}
+.nav-links li:nth-child(8){
+    transition: all 0.5s ease 1.8s;
+}
+
+li.fade{
+    opacity:1;
+}
+
+/* Styling the background contents */
+
+.landing{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fullscreen-video-wrap video {
+    width:100vw;
+    height:100vh;
+    
+}
+
+.imagebg{
+    background-color: black;
+    width:100vw;
+    height:100vh;
+}
+.search-container{
+    position: absolute;
+    top:3%;
+    left:50%;
+    transform:translate(-50%,-3%);
+    background:black;
+    height:40px;
+    border-radius: 40px;
+    padding:10px;
+}
+
+/*SearchButton styles */
+
+.searchButton i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchButton{
+    color: var(--pure);
+    float:right;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background:black;
+    display: flex;
+    justify-content:center ;
+    position: absolute;
+    right:0;
+    top:0;
+    transition:0.4s;
+}
+
+
+.searchRecipes{
+    border:none;
+    background:none;
+    outline:none;
+    float:left ;
+    padding:0;
+    color:var(--pure);
+    font-size:16px;
+    transition:0.4s;
+    width:240px;
+    font-family: var(--Anton);
+}
+
+.searchRecipes:active,.searchRecipes.searchButton:hover
+{
+    background:var(--pure);
+    color:grey;
+}
+
+.searchButton:hover{
+    background: var(--pure);
+    color: black;
+}
+
+.form-box{
+    width:380px;
+    height:480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--pure);
+    background:	rgba(255,255,255,0.6);
+    padding: 20px;
+    overflow:hidden;
+    position: absolute;
+   
+}
+
+/* Styling the food list items */
+
+.items{
+    margin-top:100px;
+}
+
+.items li a{
+    color: var(--pure);
+    font-family: var(--Lexend);
+}
+
+/* Styling my warning text */
+#mystyle{
+    background-color: var(--redish);
+    padding:20px;
+    width: auto;
+    height: auto;
+    margin: 30px;
+    border-radius: 15px;
+    color:var(--pure);
+}
+
+.items li{
+    padding:20px;
+    width: auto;
+    height: auto;
+    margin: 30px;
+    background-color: burlywood;
+    border-radius: 15px;
+}
+
+.items li:hover, .item li:focus{
+    box-shadow: 5px 10px black;
+    border-color: var(--pure);
+    border-style: solid;
+    filter: saturate(1000%);
+}
+

@@ -1,0 +1,233 @@
+@import url('../css/fonts.css');  /* Add the font file not to my html but the css file */
+
+/* In a case where you will be using a value numerous times, rather make it a variable */
+
+/* The :root selector matches the document's root element */
+:root{
+   
+   /* Theme font-family  */
+   --Abel:'Abel',cursive;
+   --Anton:'Anton',cursive;
+   --Josefin:'Josefin',cursive;
+   --Lexend:'Lexend',cursive;
+   --Livvic:'Livvic',cursive;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+body,html{
+    border: 1px solid #f1f1f1;
+}
+
+/* styling the nav */
+.nav-links li{
+    opacity:0;
+}
+
+.hamburger{
+  position: absolute;
+  cursor: pointer;
+  right:0;
+  top:30%;
+  transform: translate(-5%,-30%);
+  z-index:4;
+}
+
+nav{
+  height:10vh;    
+  position:relative
+}
+
+.line{
+   width:30px;
+   height:3px;
+   background:white;
+   margin:5px;
+}
+
+.nav-links{
+  display:flex;
+  width:100%;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  margin-left:auto;
+  position: fixed;
+  background:#4169E1;
+  flex-direction: column;
+  clip-path: circle(9px at 90% -10%);
+  -webkit-clip-path:circle(9px at 90% -10%);
+  list-style: none;
+  z-index:3;
+  transition: all 1s ease-out;                      
+}
+
+.nav-links.open{
+  clip-path: circle(1300px at 90% -10%);
+  -webkit-clip-path:circle(1300px at 90% -10%);
+
+}
+
+.nav-links li a {
+  color:white;
+  text-decoration: none;
+  font-family: var(--Livvic);
+  font-size: 24px;
+  
+}
+
+.nav-links li:nth-child(1){      /*Getting the list contents*/
+    transition:all 0.5s ease 0.2s;
+}
+.nav-links li:nth-child(2){
+    transition:all 0.5s ease 0.4s;
+}
+.nav-links li:nth-child(3){
+    transition:all 0.5s ease 0.6s;
+}
+.nav-links li:nth-child(4){
+    transition:all 0.5s ease 0.8s;
+}
+.nav-links li:nth-child(5){
+    transition:all 0.5s ease 1.2s;
+}
+.nav-links li:nth-child(6){
+    transition:all 0.5s ease 1.4s;
+}
+.nav-links li:nth-child(7){
+    transition:all 0.5s ease 1.6s;
+}
+.nav-links li:nth-child(8){
+    transition:all 0.5s ease 1.8s;
+}
+
+li.fade{
+    opacity:1;
+}
+
+.hero{
+    height:100vh;
+    width:100vw;
+    background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+    background-position: center;
+    background-size:contain;
+    position:absolute;
+    background-repeat:no-repeat;  
+} 
+
+.form-box{
+    width:380px;
+    height:480px;
+    position:relative;
+    margin:6% auto;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    border: 3px solid white;
+    z-index: 2;
+    padding: 20px;
+    overflow:hidden;
+    box-shadow: 5px 30px 50px grey;
+}
+
+.button-box{
+      width:220px;
+      margin:35px auto;
+      position: relative;
+      box-shadow: 0 0 20px 12px white;
+      border-radius:30px;      
+  }
+
+  .toggle-btn{
+      padding:10px 30px;
+      cursor:pointer;
+      background:transparent;
+      border:0;
+      outline:none;
+      position:relative;
+      color:black;
+      font-family:var(--Anton)
+  }
+
+  #btn{
+      top:0;
+      left:0;
+      position:absolute;
+      width:110px;
+      height:100%;
+      background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+      border-radius:30px;
+      transition:.5s
+  }
+
+.social-icons{
+    margin:-20px 25px;
+    text-align:center;
+    
+}
+.social-icons a{
+   width:30px;
+   color:black;
+   box-shadow:0 0 20px white;
+   cursor:pointer;
+   border-radius:50%;
+   margin:0 20px;
+}
+
+.input-group{
+    top:180px;
+    position:absolute;
+    width:280px;
+    transition:.5s;
+}
+
+.input-field{
+    width:100%;
+    padding:10px 0;
+    margin:5px 0;
+    border-left:0;
+    border-top:0;
+    border-right:0;
+    border-bottom:1px solid #999;
+    outline:none;
+    background:transparent;
+    color:black;
+    font-family: var(--Abel);
+}
+
+.submit-btn{
+    width:85%;
+    padding:10px 30px;
+    cursor:pointer;
+    display:block;
+    margin:auto;
+    background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+    border:0;
+    outline:none;
+    border-radius:30px;
+    color:black;
+    font-family:var(--Lexend)
+}
+
+.check-box{
+    margin:30px 10px 35px 0;   
+}
+
+span{
+    color:#777;
+    font-size:15px;
+    bottom:68px;
+    position:absolute;
+    font-family:var(--Livvic);
+}
+
+#login{
+    left:50px;
+}
+
+#register{
+    left:450px;
+}
